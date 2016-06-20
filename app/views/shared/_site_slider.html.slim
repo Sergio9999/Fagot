@@ -1,0 +1,55 @@
+.site-slider
+  ul.bxslider
+    li
+      = image_tag "/images/slider/slide1.jpg", alt:"slider image 1"
+      .container
+        .row
+          .col-md-12.text-right
+            .slider-caption
+              h2
+                | Your HTML5 Website
+    li
+      = image_tag "/images/slider/slide2.jpg"
+      .container.caption-wrapper
+        .slider-caption
+          h2
+            | Free Bootstrap Template
+    li
+      = image_tag "/images/slider/slide3.jpg", alt:"slider image 3"
+      .container
+        .row
+          .col-md-12.text-right
+            .slider-caption
+              h2
+                | Mobile Ready Design
+    li
+      = image_tag "/images/slider/slide4.jpg", alt:"slider image 4"
+      .container
+        .row
+          .col-md-12.text-right
+            .slider-caption
+              h2
+                | Responsive Bootstrap
+    li
+      = image_tag "/images/slider/slide5.jpg", alt:"slider image 5"
+      .container
+        .row
+          .col-md-12.text-right
+            .slider-caption
+              h2
+                | Get it for free!
+  .bx-thumbnail-wrapper
+    .container
+      .row
+        .col-md-12
+          #bx-pager
+            a[data-slide-index="0" href=""]
+              =image_tag "/images/slider/thumb1.jpg", alt:"image 1"
+            a[data-slide-index="1" href=""]
+              =image_tag "/images/slider/thumb2.jpg", alt:"image 1"
+            a[data-slide-index="2" href=""]
+              =image_tag "/images/slider/thumb3.jpg", alt:"image 1"
+            a[data-slide-index="3" href=""]
+              =image_tag "/images/slider/thumb4.jpg", alt:"image 1"
+            a[data-slide-index="4" href=""]
+              =image_tag "/images/slider/thumb5.jpg", alt:"image 1"
