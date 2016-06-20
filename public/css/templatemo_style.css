@@ -314,7 +314,11 @@ h6 {
   height: 102px;
   width: 100%;
   z-index: 9999;
-  background-color: #161616;
+  background-color: #ff3800;
+  opacity: 0.9;
+  /*background-image: url(../images/fon.jpeg);
+  background-repeat: repeat-x;
+  */
 }
 
 #templatemo_logo {
@@ -344,8 +348,11 @@ h6 {
 }
 .main-menu ul {
   position: absolute;
-  background-color: #161616;
+  background-color: #ff3800;
   width: 100%;
+   /*background-image: url(../images/fon.jpeg);
+  background-repeat: repeat-x;
+  */
 }
 .main-menu ul li {
   display: inline-block;
@@ -396,6 +403,7 @@ h6 {
    ========================================================================== */
 .site-slider {
   padding-top: 102px;
+
 }
 .site-slider ul li {
   float: left;
@@ -412,7 +420,7 @@ h6 {
 }
 
 .bx-thumbnail-wrapper {
-  background-color: #161616;
+  background-color: #ff3800;
   text-align: center;
   margin-top: -1px;
   position: relative;
