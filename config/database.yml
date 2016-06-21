@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  password: admin
+
+development:
+  <<: *default
+  database: fagot_kirpichi_development
+
+test:
+  <<: *default
+  database: fagot_kirpichi_test
+
+production:
+  <<: *default
+  database: fagot_kirpichi_production
