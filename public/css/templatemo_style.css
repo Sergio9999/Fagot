@@ -314,16 +314,12 @@ h6 {
   height: 102px;
   width: 100%;
   z-index: 9999;
-  background-color: #ff3800;
-  opacity: 0.9;
-  /*background-image: url(../images/fon.jpeg);
+  background-image: url(../images/fon7.jpg);
   background-repeat: repeat-x;
-  */
 }
 
 #templatemo_logo {
-  background-color: #26b864;
-  background-image: url(../images/templatemo_logo.png);
+  background-image: url(../images/logo2.png);
   background-repeat: no-repeat;
   background-position: 30px center;
   height: 102px;
@@ -341,24 +337,20 @@ h6 {
   color: white;
   display: block;
 }
-
 .main-menu {
   text-align: right;
   position: relative;
 }
 .main-menu ul {
   position: absolute;
-  background-color: #ff3800;
   width: 100%;
-   /*background-image: url(../images/fon.jpeg);
-  background-repeat: repeat-x;
-  */
 }
 .main-menu ul li {
   display: inline-block;
-  width: 150px;
+  width: auto;
   text-align: center;
   line-height: 102px;
+  margin-left: 50px;
 }
 .main-menu ul li a {
   color: white;
@@ -403,6 +395,7 @@ h6 {
    ========================================================================== */
 .site-slider {
   padding-top: 102px;
+  cursor: pointer;
 
 }
 .site-slider ul li {
@@ -411,7 +404,7 @@ h6 {
 }
 
 .bx-wrapper img {
-  opacity: 0.8;
+  opacity: 0.9;
   filter: alpha(opacity=80);
 }
 
@@ -420,10 +413,11 @@ h6 {
 }
 
 .bx-thumbnail-wrapper {
-  background-color: #ff3800;
   text-align: center;
   margin-top: -1px;
   position: relative;
+  background-image: url(../images/fon7.jpg);
+  background-repeat: repeat-x;
 }
 
 .caption-wrapper {
@@ -450,7 +444,7 @@ h6 {
   margin: 20px 10px 0 20px;
   padding: 0 0 40px 0;
   display: inline-block;
-  opacity: 0.4;
+  opacity: 0.7;
   filter: alpha(opacity=40);
   outline: 0;
   border: 0;
@@ -786,4 +780,11 @@ ul.social li a {
     opacity: 0;
     filter: alpha(opacity=0);
   }
+}
+/*------------------------------------------------------
+  Modal
+--------------------------------------------------------*/
+#myModalForm { margin-top:100px;
+}
+.modal-open{overflow-y: scroll;
 }

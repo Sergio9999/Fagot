@@ -18,6 +18,7 @@
 
 
 
+
 	var $links = $(".bx-wrapper .bx-controls-direction a, #bx-pager a");
 	$links.click(function(){
 	   $(".slider-caption").removeClass('animated fadeInLeft');

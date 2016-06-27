@@ -19,11 +19,11 @@
 		slideSelector: '',
 		infiniteLoop: true,
 		hideControlOnEnd: false,
-		speed: 500,
+		speed: 700,
 		easing: null,
 		slideMargin: 0,
 		startSlide: 0,
-		randomStart: false,
+		randomStart: true,
 		captions: false,
 		ticker: false,
 		tickerHover: false,
@@ -62,16 +62,16 @@
 		autoControlsSelector: null,
 
 		// AUTO
-		auto: false,
+		auto: true,
 		pause: 4000,
 		autoStart: true,
 		autoDirection: 'next',
-		autoHover: false,
+		autoHover: true,
 		autoDelay: 0,
 
 		// CAROUSEL
 		minSlides: 1,
-		maxSlides: 1,
+		maxSlides: 5,
 		moveSlides: 0,
 		slideWidth: 0,
 
