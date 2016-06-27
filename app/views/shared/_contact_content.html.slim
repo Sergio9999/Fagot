@@ -3,23 +3,39 @@
     .row
       .col-md-12.text-center
         h1.section-title
-          | Contact
+          | Контакты
+      .col-md-8.col-md-offset-2.text-center
+        h3   
+         span[style="color:red"]
+          | Телефоны для контакта:
+        h4
+          | +380662600555, +380505088367, +380930807653
+        h3 
+         span[style="color:red"] 
+          | E-mail:
+        h4[style="color:green"]   
+          | flp.Frolkin@bk.ru
+        h3
+         span[style="color:red"]
+          | Адрес: 
+        h4 
+          | г. Ясиноватая, ул. Октябрьская, 186
     .row
-      .col-md-offset-2.col-md-8.text-center.bigger-text
+      .col-md-offset-2.col-md-8.text-center.bigger-text[style="position:relative;"]
+        h2.section-title
+         | Обратный вызов
         p
-          | Asperiores, itaque vero facere laudantium voluptas temporibus mollitia nisi deleniti illo minima quisquam corporis possimus nesciunt.
-      .col-md-6.col-sm-6
-        #map
+          | Оставьте нам информацию о себе и мы обязательно Вам перезвоним
 
-      .col-md-6.col-sm-6
+      .col-md-6.col-sm-6.col-md-offset-3.text-center
         .row.contact-form
-          fieldset.col-md-6.col-sm-6
-            input#name[type="text" name="name" placeholder="Name"]
-          fieldset.col-md-6.col-sm-6
-            input#email[type="email" name="email" placeholder="Email"]
+          fieldset.col-md-12.col-sm-6
+            input#name[type="text" name="name" placeholder="Имя"]
           fieldset.col-md-12
-            input#subject[type="text" name="subject" placeholder="Subject"]
+            input#subject[type="text" name="subject" placeholder="Телефон(+380)"]
           fieldset.col-md-12
-            textarea#comments[name="comments" placeholder="Message"]
+            textarea#comments[name="comments" placeholder="Коментарий"]
           fieldset.col-md-12
-            input#submit.button[type="submit" name="send" value="Send Message"]
+            input#submit.button[type="submit" name="send" value="Отправить" data-target="#myModalForm" data-toggle="modal"]
+
+      = render 'modals/modal'
