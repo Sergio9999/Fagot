@@ -317,12 +317,14 @@ h6 {
   background-image: url(../images/fon7.jpg);
   background-repeat: repeat-x;
 }
-#logo {background-image: url(../images/logo.png);
+#logo {
      display:block;
      position: absolute;
-     width:auto;
-     height:auto;
+     width:180px;
      background-repeat: no-repeat;
+     height:75px;
+     background-image: url(../images/logo.png);
+
 }
 #templatemo_logo {
   background-image: url(../images/logo.png);
@@ -343,6 +345,14 @@ h6 {
   color: white;
   display: block;
 }
+.email {display: block;
+        width:auto;
+        position:absolute;
+        right: 5px;
+        color: yellow;
+        font-size: 16px;
+        text-decoration: bold;
+        }
 .main-menu {
   text-align: right;
   position: relative;
