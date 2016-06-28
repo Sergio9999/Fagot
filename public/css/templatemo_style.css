@@ -317,9 +317,15 @@ h6 {
   background-image: url(../images/fon7.jpg);
   background-repeat: repeat-x;
 }
-
+#logo {background-image: url(../images/logo.png);
+     display:block;
+     position: absolute;
+     width:auto;
+     height:auto;
+     background-repeat: no-repeat;
+}
 #templatemo_logo {
-  background-image: url(../images/logo2.png);
+  background-image: url(../images/logo.png);
   background-repeat: no-repeat;
   background-position: 30px center;
   height: 102px;
@@ -678,13 +684,21 @@ input.button {
 
 .site-footer {
   margin-top: 120px;
-  background-color: #26b864;
   color: white;
   padding: 25px 0;
+  background-image: url(../images/fon7.jpg);
+  background-repeat: repeat-x;
+  position:relative;
+  bottom: 0;
 }
+.contact { width:250px;
+float:left;
+position: absolute;
+top:-20px;}
 .site-footer a {
   color: white;
 }
+.site-footer h4 {color: white}
 .site-footer span {
   margin-top: 12px;
   display: block;

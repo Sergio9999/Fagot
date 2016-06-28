@@ -16,9 +16,6 @@
 
 	mainSlider();
 
-
-
-
 	var $links = $(".bx-wrapper .bx-controls-direction a, #bx-pager a");
 	$links.click(function(){
 	   $(".slider-caption").removeClass('animated fadeInLeft');
@@ -58,7 +55,7 @@ function initialize() {
       center: new google.maps.LatLng(37.769725, -122.462154)
     };
     map = new google.maps.Map(document.getElementById('map'),  mapOptions);
-}
+};
 
 // load google map
 var script = document.createElement('script');

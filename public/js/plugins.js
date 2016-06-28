@@ -23,7 +23,7 @@
 		easing: null,
 		slideMargin: 0,
 		startSlide: 0,
-		randomStart: true,
+		randomStart: false,
 		captions: false,
 		ticker: false,
 		tickerHover: false,
