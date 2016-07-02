@@ -1,7 +1,12 @@
 class InvitersController < ApplicationController
+  def new
+    @message = Message.new
+  end
+
   def create
-    @name = params[:name]
-    @phone = params[:phone]
-    @comentary = params[:comentary]
+    @message = Message.new(params[:message])
+    if @message.valid?
+      puts true
+    end
   end
 end
