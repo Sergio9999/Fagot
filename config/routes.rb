@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root 'static_pages#index'
-  resources :inviters, only: [:new, :create]
+  resources :messages, only: [:new, :create]
 end

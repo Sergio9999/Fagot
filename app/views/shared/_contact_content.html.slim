@@ -28,9 +28,16 @@
          | Обратный вызов
         p
           | Оставьте нам информацию о себе и мы обязательно Вам перезвоним
-
       .col-md-6.col-sm-6.col-md-offset-3.text-center
         .row.contact-form
           fieldset.col-md-12.col-sm-6
-            = render 'inviters/form'
-      = render 'modals/modal'
+            = form_tag controller:'messages', action:'create' do
+              = text_field_tag :name ,'Имя', onclick: 'if($(this).val()=="Имя"){$(this).val("");};'
+
+              = text_field_tag :phone, 'Телефон(+380)', onclick: 'if($(this).val()=="Телефон(+380)"){$(this).val("");};'
+               
+              = text_area_tag :comment, 'Коментарий', onclick: 'if($(this).val()=="Коментарий"){$(this).val("");};'
+               
+              = submit_tag :Отправить, class:'button', 'data-toggle' => "modal", 'data-target' => '#myModalForm'
+            end
+= render 'modals/modal'
