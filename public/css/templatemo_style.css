@@ -328,7 +328,7 @@ h6 {
 
 }
 #templatemo_logo {
-  background-image: url(../images/logo.png);
+  background-image: url(../images/logo1.png);
   background-repeat: no-repeat;
   background-position: 30px center;
   height: 102px;
@@ -577,6 +577,7 @@ h6 {
    ========================================================================== */
 .product-item {
   margin-bottom: 30px;
+  cursor: pointer;
 }
 .product-item .item-thumb {
   -webkit-backface-visibility: hidden;
@@ -589,7 +590,6 @@ h6 {
   position: absolute;
   right: 10px;
   top: 10px;
-  background-color: white;
   color: #444444;
   text-transform: uppercase;
   font-size: 12px;
