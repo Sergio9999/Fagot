@@ -801,6 +801,7 @@ ul.social li a {
     filter: alpha(opacity=0);
   }
 }
+html {overflow-x: hidden}
 
 /*------------------------------------------------------
   Modal
