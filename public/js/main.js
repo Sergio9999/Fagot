@@ -23,8 +23,8 @@
 	});
 
 	$(".bx-controls").addClass('container');
-	$(".bx-next").addClass('fa fa-angle-right');
-	$(".bx-prev").addClass('fa fa-angle-left');
+	$(".bx-next").addClass('glyphicon glyphicon-chevron-right');
+	$(".bx-prev").addClass('glyphicon glyphicon-chevron-left');
 
 
 	$('a.toggle-menu').click(function(){

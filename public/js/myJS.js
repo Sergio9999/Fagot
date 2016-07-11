@@ -16,6 +16,6 @@ $('#products button.price').click(function(){
   $('#products .price-list').show('slow');
 });
 $('#products .price-list button.fade_button').click(function(){
-  $('#products .price-list').fadeOut(2000);
+  $('#products .price-list').fadeOut('slow');
 });
 })

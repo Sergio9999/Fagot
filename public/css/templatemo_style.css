@@ -321,12 +321,12 @@ h6 {
      position: absolute;
      width:180px;
      background-repeat: no-repeat;
-     height:75px;
+     height:80px;
      background-image: url(../images/logo.png);
 
 }
 #templatemo_logo {
-  background-image: url(../images/logo1.png);
+  background-image: url(../images/logo3.png);
   background-repeat: no-repeat;
   background-position: 30px center;
   height: 102px;
@@ -700,14 +700,21 @@ input.button {
 .contact { width:250px;
 float:left;
 position: absolute;
-top:-20px;}
+top:-20px;
+font-size:14px;
+}
 .site-footer a {
   color: white;
+}
+#copyright { 
+  font-size: 20px;
+  font-weight: bold;
 }
 .site-footer h4 {color: white}
 .site-footer span {
   margin-top: 12px;
   display: block;
+
 }
 
 ul.social {
