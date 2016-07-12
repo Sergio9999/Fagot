@@ -1,9 +1,21 @@
 class MessagesController < ApplicationController
+  def new
+    @message = Message.new
+  end
+
   def create
-    name = params[:name]
-    phone = params[:phone]
-    comment = params[:comment]
-    InviterMailer.callback_information(name, phone, comment).deliver_now
-    redirect_to root_path
+    @message = Message.new(message_params)
+    if @message.valid?
+      InviterMailer.callback_information(@message).deliver_now
+      redirect_to root_path
+    else
+      render :new
+    end
+  end
+
+  private
+
+  def message_params
+    params.require(:message).permit(:name, :phone, :comment)
   end
 end
