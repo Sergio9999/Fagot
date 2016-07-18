@@ -42,12 +42,29 @@ fieldset {
   border: 0;
   margin: 0;
   padding: 0;
+  position:relative;
 }
 
 textarea {
   resize: vertical;
 }
-#product-promotion{margin-top: -100px;1}
+.my-flash {
+    text-align:center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top:50px;
+    color: red;
+}
+.alert.alert-info {font-size: 24px;}
+#error_explanation {
+    color: #f00;
+    font-size: 16px;
+}
+#error_explanation ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+}
+#product-promotion{margin-top: -100px;}
 .main-menu ul, .site-slider ul, ul.social {
   padding: 0;
   margin: 0;
@@ -792,6 +809,7 @@ ul.social li a {
   }
 
   .contact-form {
+    position: relative;
     margin-top: 60px;
   }
 
@@ -813,6 +831,4 @@ html {overflow-x: hidden}
 /*------------------------------------------------------
   Modal
 --------------------------------------------------------*/
-#myModalForm { margin-top:100px;
-}
-.modal-open{overflow-y: scroll;}
+.modal { margin-top:100px;}

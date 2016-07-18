@@ -1,0 +1,15 @@
+ru:
+  activerecord:
+    models:
+      message: Пользователь
+    attributes:
+      profile:
+        name: "Отображаемое имя"
+        phone: Телефон
+        comment: 'Коментарий'
+activerecord:
+    errors:
+      template:
+        header:
+          one:   "Cохранение не удалось из-за %{count} ошибки"
+          other: "Cохранение не удалось из-за %{count} ошибок"        

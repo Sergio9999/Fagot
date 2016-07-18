@@ -7,9 +7,9 @@ class MessagesController < ApplicationController
     @message = Message.new(message_params)
     if @message.valid?
       InviterMailer.callback_information(@message).deliver_now
-      redirect_to root_path
+      redirect_to root_path, notice: 'Спасибо! Мы Вам скоро перезвоним'
     else
-      render :new
+      render 'static_pages/index'
     end
   end
 
