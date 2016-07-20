@@ -333,21 +333,39 @@ h6 {
   background-image: url(../images/fon7.jpg);
   background-repeat: repeat-x;
 }
+.scrolled-header {
+  position: fixed;
+  min-height: 85px;
+  height: 85px;
+  width: 100%;
+  z-index: 9999;
+  background-image: url(../images/fon7.jpg);
+  background-repeat: repeat-x;
+}
+.scrolled-header .main-menu ul li a {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  display: block;
+}
 #logo {
      display:block;
      position: absolute;
      width:180px;
      background-repeat: no-repeat;
-     height:80px;
+     height:84px;
      background-image: url(../images/logo.png);
-
 }
 #templatemo_logo {
   background-image: url(../images/logo3.png);
   background-repeat: no-repeat;
   background-position: 30px center;
-  height: 102px;
+  height: 89px;
   display: block;
+  margin-top:5px;
 }
 #templatemo_logo h1 {
   margin: 0;
@@ -372,6 +390,7 @@ h6 {
 .main-menu {
   text-align: right;
   position: relative;
+  top:-2px;
 }
 .main-menu ul {
   position: absolute;
