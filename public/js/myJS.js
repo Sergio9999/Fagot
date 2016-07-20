@@ -26,14 +26,14 @@ $(window).load(function(){
   var scroll_error = flash_error.offset().top;
   $page.animate({
     scrollTop: scroll_error - 100
-  },1000);
+  }, 400);
  };
  var alert_info = $('.alert.alert-info');
  if (alert_info.length == 1) {
    var scroll_alert_info = alert_info.offset().top;
    $page.animate({
      scrollTop: scroll_alert_info - 150
-   }, 600 )
+   }, 400 )
   }
 })
 
