@@ -1,0 +1,22 @@
+.col-md-6.col-sm-6.col-md-offset-3.text-center
+  .row.contact-form
+    fieldset.col-md-12.col-sm-6
+      = form_for @message, url: messages_path do |f|
+        - if @message.errors.any?
+          #error_explanation
+            .alert.alert-error
+              |  Форма содержит следующие ошибки
+            ul
+              - @message.errors.full_messages.each do |msg|
+                li
+                  | *** 
+                  = msg
+        = f.text_field :name, :placeholder => 'Имя'
+
+        = f.text_field :phone, :placeholder => 'Телефон в формате 38095XXXXXXX'
+         
+        = f.text_area :comment, :placeholder => 'Комментарий'
+        
+        = f.submit :Отправить, class:'button'
+        end
+      end
