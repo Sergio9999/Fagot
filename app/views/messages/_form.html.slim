@@ -1,13 +1,13 @@
-.col-md-6.col-sm-6.col-md-offset-3.text-center
+.col-md-6.col-sm-8.col-sm-offset-2.col-md-offset-3.text-center
   .row.contact-form
-    fieldset.col-md-12.col-sm-6
+    fieldset.col-md-12.col-sm-12
       = form_for @message, url: messages_path do |f|
         - if @message.errors.any?
           #error_explanation
             .alert.alert-error
-              = t('activerecord.errors.template.body', count: 1)
+              = t('activerecord.errors.template.body', :count => 1)
             ul
-              - @message.errors.full_messages.each do |msg|
+              - @message.errors.full_messages.each do | msg |
                 li
                   | *** 
                   = msg

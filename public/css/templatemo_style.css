@@ -391,10 +391,12 @@ h6 {
   text-align: right;
   position: relative;
   top:-2px;
+
 }
 .main-menu ul {
   position: absolute;
   width: 100%;
+
 }
 .main-menu ul li {
   display: inline-block;
@@ -803,6 +805,10 @@ ul.social li a {
     display: none;
     border-top: 1px solid #2f2f2f;
     text-align: left;
+  }
+  .main-menu ul {
+    background-color: #fb4300;
+    margin-top:4px;
   }
   .main-menu ul li {
     padding: 0;
