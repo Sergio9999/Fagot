@@ -3,10 +3,9 @@ ru:
     models:
       message: Пользователь
     attributes:
-      profile:
-        name: "Отображаемое имя"
-        phone: Телефон
-        comment: 'Коментарий'
+      name: "Отображаемое имя"
+      phone: Телефон
+      comment: 'Коментарий'
 activerecord:
     errors:
       template:
