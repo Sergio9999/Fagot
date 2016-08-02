@@ -391,12 +391,10 @@ h6 {
   text-align: right;
   position: relative;
   top:-2px;
-
 }
 .main-menu ul {
   position: absolute;
   width: 100%;
-
 }
 .main-menu ul li {
   display: inline-block;
@@ -405,6 +403,8 @@ h6 {
   line-height: 102px;
   margin-left: 50px;
 }
+.main-menu ul li:first-child{margin-left: -50px;}
+
 .main-menu ul li a {
   color: white;
   font-weight: 600;
@@ -808,7 +808,8 @@ ul.social li a {
   }
   .main-menu ul {
     background-color: #fb4300;
-    margin-top:4px;
+    margin-top:9px;
+    text-align: center;
   }
   .main-menu ul li {
     padding: 0;
@@ -816,6 +817,7 @@ ul.social li a {
     display: block;
     border-bottom: 1px solid #2f2f2f;
   }
+  .main-menu ul li:first-child{margin-left: 0px;}
   .main-menu ul li:last-child {
     border-bottom: 0;
   }
@@ -827,6 +829,7 @@ ul.social li a {
     font-size: 18px;
     display: block;
   }
+}
 }
 @media (max-width: 767px) {
   .section-title {
