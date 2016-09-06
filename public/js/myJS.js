@@ -39,6 +39,13 @@ $(document).on('scroll', function () {
           });
          };
       });
+var $logo = $('a #templatemo_logo');
+$logo.click(function(){
+  $(window).animate({
+    scrollTop: 0
+}, 800);
+})
+
 $(window).load(function(){
  var $page = $('html, body');
  var flash_error = $('#error_explanation');
